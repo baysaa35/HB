@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Төрсөн өдрийн мэндчилгээ 💙</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-hearts" aria-hidden="true"></div>
+
+  <main class="card">
+    <!-- 1. ENVELOPE -->
+    <section id="envelopeScreen" class="screen active">
+      <div class="cute-star">✦</div>
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="flap"></div>
+          <div class="letter-preview">💌</div>
+          <div class="front"></div>
+        </div>
+      </div>
+      <h1>Таньд нэг жижигхэн<br><span>мэндчилгээ</span> байна 💙</h1>
+      <p>Дугтуйг нээгээд үзээрэй ✨</p>
+      <button id="openBtn" class="main-btn">💌 Нээх</button>
+    </section>
+
+    <!-- 2. PHOTOS -->
+    <section id="photosScreen" class="screen">
+      <div class="section-icon">📸</div>
+      <h2>Дурсамжууд 💙</h2>
+      
+      <div class="gallery">
+        <div class="photo-box"><img src="images/photo1.jpg.jpg" alt="Дурсамж 1"><span>Дурсамж 1</span></div>
+        <div class="photo-box"><img src="images/photo2.jpg.jpg" alt="Дурсамж 2"><span>Дурсамж 2</span></div>
+        <div class="photo-box"><img src="images/photo3.jpg.jpg" alt="Дурсамж 3"><span>Дурсамж 3</span></div>
+        <div class="photo-box"><img src="images/photo4.jpg.jpg" alt="Дурсамж 4"><span>Дурсамж 4</span></div>
+      </div>
+
+      <button class="main-btn next-btn" data-next="letterScreen">💙 Дараагийнх</button>
+    </section>
+
+    <!-- 3. LETTER -->
+    <section id="letterScreen" class="screen">
+      <div class="section-icon">💌</div>
+      <h2>Таньд зориулж...</h2>
+
+      <div class="letter-paper">
+        <p>Сайн уу, миний супер найзаа! 💙</p>
+
+        <p>
+          Өнөөдөр таны төрсөн өдөр болохоор энэ жижигхэн мэндчилгээг
+          өөрийн гараар бэлдлээ. Бидний хамт өнгөрүүлсэн хөгжилтэй,
+          сайхан мөчүүд бүгд надад үнэ цэнтэй байдаг шүү.
+        </p>
+
+        <p>
+          Үргэлж өөрөөрөө байж, хүссэн зүйлдээ хүрч, олон сайхан
+          дурсамж бүтээж яваарай. Инээмсэглэл чинь хэзээ ч битгий
+          дуусаасай. 💙💙
+        </p>
+
+        <p class="signature">— Дүүгээс нь 🫶</p>
+      </div>
+
+      <button class="main-btn next-btn" data-next="birthdayScreen">🎂 Дараагийнх</button>
+    </section>
+
+    <!-- 4. BIRTHDAY -->
+    <section id="birthdayScreen" class="screen">
+      <div class="cake">🎂</div>
+      <div class="section-icon">✨</div>
+      <p class="small-title">ӨНӨӨДӨР БОЛ...</p>
+      <h2 class="birthday-title">ТӨРСӨН ӨДРИЙН<br><span>МЭНД ХҮРГЭЕ!</span> 🎉</h2>
+      <p class="birthday-text">
+        Таньд аз жаргал, эрүүл энх, хайр, инээд хөөрөөр дүүрэн
+        гайхалтай жилийг хүсье! 💙
+      </p>
+
+      <button id="musicBtn" class="music-btn">🎵 Дуугаа тоглуулах</button>
+      <audio id="birthdayMusic" controls preload="auto">
+        <source src="music/birthday..mp3" type="audio/mpeg">
+        Таны browser audio тоглуулах боломжгүй байна.
+      </audio>
+
+      <button id="confettiBtn" class="main-btn">🎉 Баярлая!</button>
+    </section>
+  </main>
+
+  <footer>Made with 💙 for my best friend</footer>
+  <script src="script.js"></script>
+</body>
+</html>
